@@ -155,5 +155,7 @@ class Bridge:
 
 
 if __name__ == '__main__':
-    bridge = Bridge(1, 5, 60, 3)
+    n = int(input("Odaberite max broj auta za se stvoriti >> "))
+    times = int(input("Koliko puta svaki auto prelazi preko mosta >> "))
+    bridge = Bridge(times, 5, n, 3)
     bridge.run()
